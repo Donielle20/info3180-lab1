@@ -3,11 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website - About</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
     </head>
 
     <body>
-        <h1>Donielle Hope</h1>
+        <div class="image">
+            <img src="{{url_for('static', filename='My_Pic.jpg')}}" alt="Donielle Hope">
+        </div>
 
-        <p>My name is Donielle Hope. I am 22 years old. I am a Computer Science major. I am in my final year. I only need 15 credits to graduate. I like playing video games and watching movies.</p>
+        <div class="Name">
+            <h1>Donielle Hope</h1>            
+        </div>
+
+        <div class="Info">
+            <p>My name is Donielle Hope. I am 22 years old. I am a Computer Science major. I am in my final year. I only need 15 credits to graduate. I like playing video games and watching movies.</p>
+        </div>
     </body>
 </html>
